@@ -1,0 +1,75 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Section Styles */
+.sections {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* About Me Section Styles */
+.aboutMe,
+.founders,
+.contactInfo {
+    flex: 0 0 30%; 
+    background-color: #fff;
+    height: 30vh;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.aboutMe .aboutMeHeader,
+.founders .foundersHeader,
+.contactInfo .contactInfoHeader {
+    color: #333;
+    font-size: 24px;
+    /* margin-bottom: 10px; */
+}
+
+.aboutMe .aboutMePara,
+.founders .foundersPara,
+.contactInfo .contactInfoPara {
+    color: #666;
+    font-size: 16px;
+}
+
+.founders .foundersSubHeader {
+    color: #555;
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .sections {
+        flex-direction: column;
+    }
+
+    .aboutMe,
+    .founders,
+    .contactInfo {
+        margin-bottom: 20px;
+        flex: 1; /* Each section takes up full width on smaller screens */
+    }
+}
